@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS_Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Rock Paper Scissor</h1>
+        <div class="img">
+            <button id="rock" onclick="mySide(this.id)"><img src="images/rock.png" alt="rock"></button>
+            <button id="paper" onclick="mySide(this.id)"><img src="images/paper.png" alt="paper"></button>
+            <button id="scissor" onclick="mySide(this.id)"> <img src="images/scissors.png" alt="scissor"></button>
+            <button id="ref" onclick="refresh()"><img src="images/reset.jpg" alt="" class="refresh"></button>
+        </div>
+        <h1>Game summary</h1>
+
+        <table id="summary">
+            <tr class="heading">
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Ties</th>
+                <th>Game played</th>
+            </tr>
+
+            <tr id="summaryDetail">
+                <th id="gameWin">0</th>
+                <th id="gameLosses">0</th>
+                <th id="gameTies">0</th>
+                <th id="gamePlayed">0</th>
+            </tr>
+            
+        </table>
+        <h1>Game History</h1>
+
+        <table  id="history">
+            <tr class="heading">
+                <th>#</th>
+                <th>User Move</th>
+                <th>Computer Move</th>
+                <th>Result</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
